@@ -253,7 +253,7 @@ public extension RNCryptor {
                         // All the crazy casting because CommonCryptor hates Swift
                         let algorithm    = CCPBKDFAlgorithm(kCCPBKDF2)
                         let prf          = CCPseudoRandomAlgorithm(kCCPRFHmacAlgSHA1)
-                        let pbkdf2Rounds = UInt32(10000)
+                        let pbkdf2Rounds = UInt32(2)
 
                         let result = CCCryptorStatus(
                             CCKeyDerivationPBKDF(
