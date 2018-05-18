@@ -392,10 +392,10 @@ public extension RNCryptor {
         //
         // Static methods
         //
-        fileprivate static let preambleSize = 1
+        fileprivate static let preambleSize = 2
         fileprivate static func canDecrypt(preamble: Data) -> Bool {
             assert(preamble.count >= 1)
-            return preamble[0] == 3
+            return preamble[0] == 2
         }
 
         //
